@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Website3</title>
+    <link rel="StyleSheet" href="style/all.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <link rel="StyleSheet" href="style/stylesheet.css">
+
+</head>
+
+<body>
+
+    <!--section1-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid header" style="height: 90px;">
+            <img src="images/logo.jpg" class="navbar-brand mh-100 logo" style="width: 90px; height: 90px;">
+            <a class="navbar-brand" href="#">TravelWithUs</a>
+            <hr class="vr">
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">Hotels</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Transportation</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle border rounded-pill border-3 dropdown1" href="#"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Flights
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Egypt</a></li>
+                            <li><a class="dropdown-item" href="#">UAE</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Saudi Arabia</a></li>
+                            <li><a class="dropdown-item" href="#">Morocco</a></li>
+                            <li><a class="dropdown-item" href="#">France</a></li>
+
+
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Special Places</a>
+                    </li>
+
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-dark" type="submit">Search</button>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-outline-dark  ms-2" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
+                        Login
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Login</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <form>
+                                        <div class="mb-3">
+                                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                                aria-describedby="emailHelp">
+                                            <div id="emailHelp" class="form-text">We'll never share your email with
+                                                anyone else.</div>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                                            <input type="password" class="form-control" id="exampleInputPassword1">
+                                        </div>
+                                        <div class="form-check form-switch">
+                                            <input class="form-check-input" type="checkbox" role="switch"
+                                                id="flexSwitchCheckChecked" checked>
+                                            <label class="form-check-label" for="flexSwitchCheckChecked">Remember
+                                                Me</label>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+
+                                    <button type="submit" class="btn btn-primary login-btn">Login</button>
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div class="fixed-icons">
+        <ul class="fixed-icons-list">
+            <a>
+                <li><i class="fab fa-facebook-square"></i></li>
+            </a>
+            <a>
+                <li><i class="fab fa-whatsapp-square"></i></li>
+            </a>
+            <a>
+                <li><i class="fab fa-twitter-square"></i></li>
+            </a>
+            <a>
+                <li><i class="fab fa-linkedin"></i></li>
+            </a>
+            <a>
+                <li><i class="fab fa-instagram-square"></i></li>
+            </a>
+        </ul>
+    </div>
+    <div id="carouselExampleCaptions" class="carousel slide" style="height: 83vh;">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner h-100 ">
+            <div class="carousel-item active h-100">
+                <img src="images/dubai.jpg" class="d-block  caro-img" alt="first">
+                <div class="carousel-caption d-none d-md-block caro-capt">
+                    <h3>United Arab Emirates</h3>
+                    <p>Discover the opulent cityscapes and futuristic architecture of the United Arab Emirates, where
+                        luxury meets innovation amidst the golden deserts.</p>
+                    <button class="btn caro-btn" type="submit">See More</button>
+
+                </div>
+            </div>
+            <div class="carousel-item h-100">
+                <img src="images/saudi.jpg" class="d-block caro-img" alt="second">
+                <div class="carousel-caption d-none d-md-block caro-capt">
+                    <h3>Saudi Arabia</h3>
+                    <p>Immerse yourself in the rich history and culture of Saudi Arabia, exploring ancient ruins,
+                        vibrant markets, and the captivating landscapes of this diverse kingdom.</p>
+                    <button class="btn caro-btn" type="submit">See More</button>
+
+                </div>
+            </div>
+            <div class="carousel-item h-100">
+                <img src="images/egypt.jpg" class="d-block caro-img" alt="third">
+                <div class="carousel-caption d-none d-md-block caro-capt ">
+                    <h3>Egypt</h3>
+                    <p>Journey through time in Egypt, where the pyramids, Sphinx, and Nile River beckon with tales of
+                        pharaohs and ancient wonders, creating an unforgettable adventure.</p>
+                    <button class="btn caro-btn" type="submit">See More</button>
+
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!--section2-->
+
+    <div class="card my-3 card-extra">
+        <div class="card-body card-body-extra">
+            <h2 class="card-title title-background">TravelWithUs
+                <hr style="border-bottom:3px solid rgb(61, 40, 167) ; width: 100px; margin: auto;margin-top: 8px;">
+            </h2>
+            <p class="card-text" style="color: rgb(80, 80, 158);">Discover unparalleled travel experiences with
+                TravelWithUs, your go-to travel and
+                tourism experts. Our dedicated team designs personalized itineraries tailored to your preferences,
+                whether you crave a tranquil beach escape or an exhilarating adventure. Committed to quality and
+                authenticity, we ensure every journey is extraordinary, blending luxury with off-the-beaten-path
+                exploration.</p>
+            <button class="btn btn-outline-primary" type="submit">See More</button>
+
+        </div>
+    </div>
+    <div class=" card-extra">
+        <div class="title-background">
+            <h2 class="title-background-h2">FAQs</h2>
+            <hr style="border-bottom:3px solid rgb(61, 40, 167) ; width: 100px; margin: auto;margin-top: 8px;">
+
+        </div>
+
+        <div class="accordion accordion-flush accordion-extra " id="accordionFlushExample">
+            <div class="accordion-item ">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed p-3 custom-border rounded-end mb-2 " type="button"
+                        data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false"
+                        aria-controls="flush-collapseOne">
+                        How do I book a trip with your company?
+                    </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body"> You can easily book a trip through our website by selecting your
+                        desired
+                        destination, choosing a package, and completing the booking process online. Alternatively, you
+                        can
+                        contact our customer support for assistance.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item ">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed p-3 custom-border rounded-end mb-2" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                        aria-controls="flush-collapseTwo">
+                        What is included in the travel packages?
+                    </button>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Our travel packages typically include accommodation, transportation, and
+                        a
+                        variety of activities. Specific inclusions vary by package, so be sure to check the details of
+                        each
+                        offering.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item ">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed p-3 custom-border rounded-end mb-2" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false"
+                        aria-controls="flush-collapseThr ee">
+                        Can I customize my travel itinerary?
+                    </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body"> Yes, we offer customizable itineraries to cater to your preferences.
+                        Contact our travel experts to discuss your specific requirements and create a personalized
+                        itinerary.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-extra">
+        <div class="title-background">
+            <h2>Customize Your Trip</h2>
+            <hr style="border-bottom:3px solid rgb(61, 40, 167) ; width: 100px; margin: auto;margin-top: 8px;">
+        </div>
+
+        <div class="translate-section">
+            <div class="translate-section-container">
+                <h4 style="color: rgb(2, 2, 125);">Write below your desired trip and we will give you the best offer!!
+                </h4>
+                <button type="button" id="btn-action" class="btn btn-outline-primary btn-extra1"
+                    data-bs-toggle="tooltip" data-bs-placement="right" title="Save">
+                    Click here
+                </button>
+                <div class="form-floating">
+                    <textarea class="form-control" id="floatingTextarea2" style="height: 100px"></textarea>
+                    <label for="floatingTextarea2">(Please mention your email address or phone number so
+                        that
+                        we can reach you as soon as possible)</label>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="img-container">
+        <div class="fixedImage"></div>
+    </div>
+
+
+    <div class="title-background">
+        <h2>Popular Trips</h2>
+        <hr style="border-bottom:3px solid rgb(61, 40, 167) ; width: 100px; margin: auto;margin-top: 8px;">
+
+    </div>
+
+    <div class="container text-center">
+        <div class="row justify-content-center">
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card m-auto mb-5 card-hover" style="width: 20rem; height:27rem;">
+                    <img src="images/THAILAND.jpg" class="card-img-top" alt="country image" style="height: 210px;">
+                    <div class="card-body">
+                        <h5 class="card-title">Thailand</h5>
+                        <p class="card-text">Thailand,is a country that has managed to
+                            retain its cultural integrity in spite of being a major tourist destination.</p>
+                        <a href="#" class="btn btn-outline-secondary" style="font-weight: bold;">Book Trip</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card m-auto mb-5 card-hover" style="width: 20rem; height:27rem;">
+                    <img src="images/INDIA.jpg" class="card-img-top" alt="country image" style="height: 210px;">
+                    <div class="card-body">
+                        <h5 class="card-title">India</h5>
+                        <p class="card-text">Situated in South Asia, India is a country with deep cultural roots and a
+                            rich heritage.</p>
+                        <a href="#" class="btn btn-outline-secondary" style="font-weight: bold;">Book Trip</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card m-auto mb-5 card-hover" style="width: 20rem; height:27rem;">
+                    <img src="images/MALDIVES.jpg" class="card-img-top" alt="country image" style="height: 210px;">
+                    <div class="card-body">
+                        <h5 class="card-title">Maldives</h5>
+                        <p class="card-text">The Maldives is an archipelagic state situated in the Indian Ocean known
+                            for its luxurious water villas.</p>
+                        <a href="#" class="btn btn-outline-secondary" style="font-weight: bold;">Book Trip</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card m-auto mb-5 card-hover" style="width: 20rem; height:27rem;">
+                    <img src="images/VIETNAM.jpg" class="card-img-top" alt="country image" style="height: 210px;">
+                    <div class="card-body">
+                        <h5 class="card-title">Vietnam</h5>
+                        <p class="card-text">Vietnam in south-eastern Asia is arguably one of the most beautiful
+                            countries on the continent.</p>
+                        <a href="#" class="btn btn-outline-secondary" style="font-weight: bold;">Book Trip</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card m-auto mb-5 card-hover" style="width: 20rem; height:27rem;">
+                    <img src="images/JORDAN.jpg" class="card-img-top" alt="country image" style="height: 210px;">
+                    <div class="card-body">
+                        <h5 class="card-title">Jordan</h5>
+                        <p class="card-text">Also known as the 'Lawrence of Arabia', Jordan is a spectacle of a
+                            destination.</p>
+                        <a href="#" class="btn btn-outline-secondary" style="font-weight: bold;">Book Trip</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card m-auto mb-5 card-hover" style="width: 20rem; height:27rem;">
+                    <img src="images/GREECE.jpg" class="card-img-top" alt="country image" style="height: 210px;">
+                    <div class="card-body">
+                        <h5 class="card-title">Greece</h5>
+                        <p class="card-text">Surrounded by crystal blue waters all around, Greece has 2000 islands among
+                            which only 160 are inhabited.</p>
+                        <a href="#" class="btn btn-outline-secondary" style="font-weight: bold;">Book Trip</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card m-auto mb-5 card-hover" style="width: 20rem; height:27rem;">
+                    <img src="images/CROATIA.jpg" class="card-img-top" alt="country image" style="height: 210px;">
+                    <div class="card-body">
+                        <h5 class="card-title">Croatia</h5>
+                        <p class="card-text">Croatia is a coastal country that is not only beautiful to look at but also
+                            offers a variety of things to do for tourists.</p>
+                        <a href="#" class="btn btn-outline-secondary" style="font-weight: bold;">Book Trip</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card m-auto mb-5 card-hover" style="width: 20rem; height:27rem;">
+                    <img src="images/EGYPT (1).jpg" class="card-img-top" alt="country image" style="height: 210px;">
+                    <div class="card-body">
+                        <h5 class="card-title">Egypt</h5>
+                        <p class="card-text">Egypt is a country that brings to mind the exotic. Beautiful pyramids,
+                            mysterious mummies and lots of gold.</p>
+                        <a href="#" class="btn btn-outline-secondary" style="font-weight: bold;">Book Trip</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="img-container">
+        <div class="fixedImage2"></div>
+    </div>
+
+    <div class="title-background">
+        <h2>Company Owners</h2>
+        <hr style="border-bottom:3px solid rgb(61, 40, 167) ; width: 100px; margin: auto;margin-top: 8px;">
+
+    </div>
+    <div class="container text-center">
+        <div class="row justify-content-center ">
+            <div class="col-lg-4 col-md-6 col-sm-12 ">
+                <div class="card text-bg-dark owner-cards" style="width: 400px; height: 270px;">
+                    <img src="images/person1.jpg" class="card-img card-img-extra" alt="images">
+                    <div class="card-img-overlay overlay-extra ">
+                        <h5 class="card-title">Sophia Nguyen</h5>
+                        <img src="images/person1.jpg" class="card-overlay-extra-img">
+                        <p class="card-text">Wellness Experience Coordinator</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card text-bg-dark owner-cards" style="width: 400px; height: 270px;">
+                    <img src="images/person2.jpg" class="card-img card-img-extra" alt="images">
+                    <div class="card-img-overlay overlay-extra">
+                        <h5 class="card-title"> Carlos Martinez</h5>
+                        <img src="images/person2.jpg" class="card-overlay-extra-img">
+                        <p class="card-text">Head of Cultural Exploration</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 ">
+                <div class="card text-bg-dark owner-cards" style="width: 400px; height: 270px;">
+                    <img src="images/person3.jpg" class="card-img card-img-extra" alt="images">
+                    <div class="card-img-overlay overlay-extra">
+                        <h5 class="card-title">Johnathan Reynolds</h5>
+                        <img src="images/person3.jpg" class="card-overlay-extra-img">
+                        <p class="card-text">Director of Environmental Stewardship</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="title-background">
+        <h2>Latest Trips</h2>
+        <hr style="border-bottom:3px solid black ; width: 100px; margin: auto;margin-bottom: 20px;">
+    </div>
+    <div class="container container-extra2">
+        <div class="card mb-4 " style="max-width: 1140px; ">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <img src="images/africa.jpg" class="img-fluid rounded-start" alt="cardImages">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h3 class="card-title card-title-style">African Safari Adventure</h3>
+                        <hr style="border-bottom:3px solid rgb(61, 40, 167) ; width: 100px;margin-top: 8px;">
+
+                        <p class="card-text card-text-style">Participants were enthralled by the close encounters with
+                            wild animals and
+                            appreciated the knowledgeable guides who provided insightful information about the ecosystem
+                            and conservation efforts.</p>
+                        <p class="card-text card-text-style"><small class="text-body-secondary"><i
+                                    class="fas fa-calendar-alt"></i>July 15th to July 21st, 2023.</small></p>
+                        <button class="btn btn-outline-secondary card-btn">See More</button>
+                        <button class="btn btn-outline-secondary card-btn">Book Trip</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card mb-4 " style="max-width: 1140px; ">
+            <div class="row g-0">
+
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h3 class="card-title card-title-style">Mystical Journey Through Southeast Asia</h3>
+                        <hr style="border-bottom:3px solid rgb(61, 40, 167) ; width: 100px;margin-top: 8px;">
+
+                        <p class="card-text card-text-style"> Travelers were captivated by the rich history and diverse
+                            landscapes of
+                            Southeast Asia, and they praised the well-organized itinerary that balanced cultural
+                            experiences with leisure time.</p>
+                        <p class="card-text card-text-style"><small class="text-body-secondary"><i
+                                    class="fas fa-calendar-alt"></i> March 5th to March 16th, 2023.</small></p>
+                        <button class="btn btn-outline-secondary card-btn">See More</button>
+                        <button class="btn btn-outline-secondary card-btn">Book Trip</button>
+
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <img src="images/vietnam2.jpg" class="img-fluid rounded-start" alt="cardImages">
+                </div>
+            </div>
+        </div>
+        <div class="card mb-4 " style="max-width: 1140px; ">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <img src="images/barcelona.jpg" class="img-fluid rounded-start" alt="cardImages">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h3 class="card-title card-title-style">European Escapade</h3>
+                        <hr style="border-bottom:3px solid rgb(61, 40, 167) ; width: 100px;margin-top: 8px;">
+
+                        <p class="card-text card-text-style">Participants were impressed by the architectural marvels
+                            and gastronomic
+                            delights of Europe, and they commended the knowledgeable tour guides who provided
+                            fascinating insights into each destination's history and culture.</p>
+                        <p class="card-text card-text-style"><small class="text-body-secondary"><i
+                                    class="fas fa-calendar-alt"></i>May 10th to May 19th, 2023.</small></p>
+                        <button class="btn btn-outline-secondary card-btn">See More</button>
+                        <button class="btn btn-outline-secondary card-btn">Book Trip</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card mb-4 " style="max-width: 1140px; ">
+            <div class="row g-0">
+
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h3 class="card-title card-title-style">Adventure in the Land Down Under</h3>
+                        <hr style="border-bottom:3px solid rgb(61, 40, 167) ; width: 100px;margin-top: 8px;">
+
+                        <p class="card-text card-text-style"> Travelers were amazed by Australia's diverse landscapes
+                            and wildlife, and
+                            they appreciated the opportunity to immerse themselves in Aboriginal culture. They also
+                            praised the professionalism of the guides who ensured a safe and memorable experience
+                            throughout the journey.</p>
+                        <p class="card-text card-text-style"><small class="text-body-secondary"><i
+                                    class="fas fa-calendar-alt"></i>September 8th to September 21st, 2023.</small></p>
+                        <button class="btn btn-outline-secondary card-btn">See More</button>
+                        <button class="btn btn-outline-secondary card-btn">Book Trip</button>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <img src="images/great-barrier-reef.jpg" class="img-fluid rounded-start" alt="cardImages">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="title-background">
+        <h2>Contact Us</h2>
+        <hr style="border-bottom:3px solid black ; width: 100px; margin: auto;margin-bottom: 20px;">
+    </div>
+
+    <div class="container text-center container-extra3" style="width: 70rem;">
+        <div class="row justify-content-center ">
+            <div class="col-lg-3 col-md-6 col-sm-12 ">
+                <div class="card" style="width: 15rem;">
+                    <div class="card-body">
+                        <h3 class="card-title">Call Us</h3>
+                        <i class="fas fa-phone-alt"
+                            style="display: block; font-size: 50px; color:rgb(33, 33, 130);"></i>
+                        <a href="#" class="card-link">Press Here</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="card" style="width: 15rem;">
+                    <div class="card-body">
+                        <h3 class="card-title">Facebook</h3>
+                        <i class="fab fa-facebook" style="display: block; font-size: 50px; color:rgb(33, 33, 130);"></i>
+                        <a href="#" class="card-link">Press Here</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 ">
+                <div class="card" style="width: 15rem;">
+                    <div class="card-body">
+                        <h3 class="card-title">Instagram</h3>
+                        <i class="fab fa-instagram"
+                            style="display: block; font-size: 50px; color:rgb(33, 33, 130);"></i>
+                        <a href="#" class="card-link">Press Here</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 ">
+                <div class="card" style="width: 15rem;">
+                    <div class="card-body">
+                        <h3 class="card-title">Whatsapp</h3>
+                        <i class="fab fa-whatsapp" style="display: block; font-size: 50px; color:rgb(33, 33, 130);"></i>
+                        <a href="#" class="card-link">Press Here</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="last-sec">
+        <div class="container text-center " style="width:100%">
+            <div class="row justify-content-center ">
+                <div class="col-lg-3 col-md-6 col-sm-12 ">
+                    <div class="card  mb-3" style="max-width: 18rem;">
+                        <hr style="    color: rgb(33, 33, 130);
+">
+
+                        <h5> <img src="images/logo.jpg">Address</h5>
+                        <hr style="    color: rgb(33, 33, 130);
+">
+                        <div class="card-body">
+                            <p class="card-title">Cairo, Egypt</p>
+                            <p class="card-title">Alexandria, Egypt</p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="card  mb-3" style="max-width: 18rem;">
+                        <hr style="    color: rgb(33, 33, 130);
+">
+
+                        <h5> <img src="images/logo.jpg">Important Links</h5>
+                        <hr style="    color: rgb(33, 33, 130);
+">
+                        <div class="card-body">
+                            <p class="card-title"><a href="">Visit Us</a></p>
+                            <p class="card-title"><a href="">Take a look</a></p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 ">
+                    <div class="card  mb-3" style="max-width: 18rem;">
+                        <hr style="    color: rgb(33, 33, 130);
+">
+                        <h5> <img src="images/logo.jpg">Vision</h5>
+                        <hr style="    color: rgb(33, 33, 130);
+">
+                        <div class="card-body">
+                            <p class="card-title">Service for all</p>
+                            <p class="card-title">Provide best service</p>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <hr style="color: rgb(33, 33, 130);">
+        <h5 style="text-align: center; color: rgb(33, 33, 130) ;">&copy; 2024 Alia Talha. All rights reserved.</h5>
+        <hr style="color: rgb(33, 33, 130);">
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+    <script src="js/javascript.js"></script>
+</body>
+
+</html>
